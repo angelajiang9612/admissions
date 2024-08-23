@@ -4,7 +4,6 @@
 
 //keep all admission level data 
 
-set trace on 
 
 forvalues i = 2015(1)2017 {
 	use "/homes/nber/jiang326-dua70429/swanson-DUA70429/jiang326-dua70429/temp/OASIS_`i'_CA.dta", replace
@@ -127,7 +126,7 @@ forvalues i = 2015(1)2017 {
 }
 
 
-//keep all admission level data 
+//keep all admission level data, only difference is the qies thing
 
 forvalues i = 2018(1)2019 {
 	use "/homes/nber/jiang326-dua70429/swanson-DUA70429/jiang326-dua70429/temp/OASIS_`i'_CA.dta", replace
@@ -310,7 +309,7 @@ m2200_thrpy_visit_num //3.75 NA, just replace by zero because represents therapy
 
 
 
-*/ 
+
 
 
 
@@ -320,6 +319,9 @@ use "/homes/nber/jiang326-dua70429/swanson-DUA70429/jiang326-dua70429/temp/OASIS
 keep if state_cd == "CA"
 
 save "/homes/nber/jiang326-dua70429/swanson-DUA70429/jiang326-dua70429/temp/CA_5pc_2019.dta", replace 
+
+
+
 
 
 
